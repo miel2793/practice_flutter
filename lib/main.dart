@@ -25,6 +25,7 @@ class home extends StatelessWidget {
       appBar:AppBar(
         backgroundColor:Colors.blue,
         title:Text('Home'),
+        centerTitle: true,
       ) ,
     );
   }
