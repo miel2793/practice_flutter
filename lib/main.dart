@@ -9,10 +9,22 @@ class myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: ,
+      debugShowCheckedModeBanner: false,
+      title:'My_APP',
+      home:home() ,
     );
   }
 }
+class home extends StatelessWidget {
+  const home({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+    );
+  }
+}
+
 
 
 
