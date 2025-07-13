@@ -30,7 +30,10 @@ class home extends StatelessWidget {
         centerTitle: true,
         
       ) ,
-      body:Text("Miel Mahmud Sifat",style: TextStyle(fontSize:42),),
+      body:Text("Miel Mahmud Sifat",style: TextStyle(fontSize:42,
+      color: Colors.deepOrange,
+      fontWeight: FontWeight.bold),
+      ),
       backgroundColor: Colors.greenAccent,
     );
   }
