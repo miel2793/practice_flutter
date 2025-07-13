@@ -15,12 +15,17 @@ class myapp extends StatelessWidget {
     );
   }
 }
+//home
 class home extends StatelessWidget {
   const home({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar:AppBar(
+        backgroundColor:Colors.blue,
+        title:Text('Home'),
+      ) ,
     );
   }
 }
