@@ -11,7 +11,9 @@ class myapp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title:'My_APP',
-      home:home() ,
+      home:home(
+
+      ) ,
     );
   }
 }
@@ -26,7 +28,10 @@ class home extends StatelessWidget {
         backgroundColor:Colors.blue,
         title:Text('Home'),
         centerTitle: true,
+        
       ) ,
+      body:Text("Miel Mahmud Sifat",style: TextStyle(fontSize:42),),
+      backgroundColor: Colors.greenAccent,
     );
   }
 }
