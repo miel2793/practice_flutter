@@ -31,7 +31,7 @@ class home extends StatelessWidget {
         
       ) ,
       body:Text("Miel Mahmud Sifat",style: TextStyle(fontSize:42,
-      color: Colors.deepOrange,
+      color: Colors.amberAccent,
       fontWeight: FontWeight.bold),
       ),
       backgroundColor: Colors.greenAccent,
