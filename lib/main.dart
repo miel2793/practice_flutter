@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
 main()
 {
   runApp(myapp());
@@ -10,35 +12,11 @@ class myapp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title:'My_APP',
-      home:home(
-
+      home:AppBar(
+        title: Text('miel'),
+        backgroundColor: Colors.blue,
       ) ,
     );
   }
 }
-//home
-class home extends StatelessWidget {
-  const home({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar:AppBar(
-        backgroundColor:Colors.blue,
-        title:Text('Home'),
-        centerTitle: true,
-        
-      ) ,
-      body:Text("Miel Mahmud Sifat",style: TextStyle(fontSize:42,
-      color: Colors.amberAccent,
-      fontWeight: FontWeight.bold),
-      ),
-      backgroundColor: Colors.greenAccent,
-    );
-  }
-}
-
-
-
 
