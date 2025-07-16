@@ -10,11 +10,13 @@ class myapp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      //theme: ThemeData(t),
       debugShowCheckedModeBanner: false,
-      home:AppBar(
-        title: Text('miel'),
-        backgroundColor: Colors.blue,
-      ) ,
+      home: AppBar(
+
+         backgroundColor:Colors.deepPurpleAccent ,
+      ),
+
     );
   }
 }
