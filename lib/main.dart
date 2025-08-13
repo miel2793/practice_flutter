@@ -14,8 +14,8 @@ class myapp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: AppBar(
 
-         backgroundColor:Colors.lightBlue ,
-        title: Text("miel Mahmud Sifat"),
+         backgroundColor:Colors.white ,
+        title: Text(" Home ",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold),),
       ),
 
     );
