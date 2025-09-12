@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
-import 'home.dart';
+import 'package:practice_flutter/home.dart';
 class Myapp extends StatelessWidget {
    Myapp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'just practice',
+      //theme:ThemeData(b),
       debugShowCheckedModeBanner: false,
-      home: Home(),
+      title:"Practice",
+      home:Home(),
     );
   }
 }

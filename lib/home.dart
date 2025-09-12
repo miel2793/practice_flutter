@@ -5,17 +5,76 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor:Colors.white,
+      backgroundColor:Colors.black87,
       appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: Text("Home",
-        style: TextStyle(fontWeight: FontWeight.bold
-        ),),
-       // centerTitle: true,
+        backgroundColor:Colors.amber,
+        title:Text("Home",style: TextStyle(fontWeight:FontWeight.bold,
+        fontSize:25,color:Colors.black),)
       ),
-      body: Text("Miel Mahmud Sifat",style:
-        TextStyle(fontWeight: FontWeight.bold
-        ,fontSize: 23),)
+body:SingleChildScrollView(
+  child: Column(
+    children: [
+      Text("Miel Mahmud Sifat\nID:20234103368\nIntke:52  ",
+          style:TextStyle(color:Colors.deepOrange,
+              fontWeight: FontWeight.bold,
+              fontSize:22)),
+      Text("Miel Mahmud Sifat\nID:20234103368\nIntke:52  ",
+          style:TextStyle(color:Colors.deepOrange,
+              fontWeight: FontWeight.bold,
+              fontSize:22)),
+      Text("Miel Mahmud Sifat\nID:20234103368\nIntke:52  ",
+          style:TextStyle(color:Colors.deepOrange,
+              fontWeight: FontWeight.bold,
+              fontSize:22)),
+      Text("Miel Mahmud Sifat\nID:20234103368\nIntke:52  ",
+          style:TextStyle(color:Colors.deepOrange,
+              fontWeight: FontWeight.bold,
+              fontSize:22)),
+      Text("Miel Mahmud Sifat\nID:20234103368\nIntke:52  ",
+          style:TextStyle(color:Colors.deepOrange,
+              fontWeight: FontWeight.bold,
+              fontSize:22)),
+      Text("Miel Mahmud Sifat\nID:20234103368\nIntke:52  ",
+          style:TextStyle(color:Colors.deepOrange,
+              fontWeight: FontWeight.bold,
+              fontSize:22)),
+      Text("Miel Mahmud Sifat\nID:20234103368\nIntke:52  ",
+          style:TextStyle(color:Colors.deepOrange,
+              fontWeight: FontWeight.bold,
+              fontSize:22)),
+      Text("Miel Mahmud Sifat\nID:20234103368\nIntke:52  ",
+          style:TextStyle(color:Colors.deepOrange,
+              fontWeight: FontWeight.bold,
+              fontSize:22)),
+      Text("Miel Mahmud Sifat\nID:20234103368\nIntke:52  ",
+          style:TextStyle(color:Colors.deepOrange,
+              fontWeight: FontWeight.bold,
+              fontSize:22)),
+      Text("Miel Mahmud Sifat\nID:20234103368\nIntke:52  ",
+          style:TextStyle(color:Colors.deepOrange,
+              fontWeight: FontWeight.bold,
+              fontSize:22)),
+      Text("Miel Mahmud Sifat\nID:20234103368\nIntke:52  ",
+          style:TextStyle(color:Colors.deepOrange,
+              fontWeight: FontWeight.bold,
+              fontSize:22)),
+      Text("Miel Mahmud Sifat\nID:20234103368\nIntke:52  ",
+          style:TextStyle(color:Colors.deepOrange,
+              fontWeight: FontWeight.bold,
+              fontSize:22)),
+      Text("Miel Mahmud Sifat\nID:20234103368\nIntke:52  ",
+          style:TextStyle(color:Colors.deepOrange,
+              fontWeight: FontWeight.bold,
+              fontSize:22)),
+      Text("Miel Mahmud Sifat\nID:20234103368\nIntke:52  ",
+          style:TextStyle(color:Colors.deepOrange,
+              fontWeight: FontWeight.bold,
+              fontSize:22)),
+    ],
+  ),
+)
+
+
     );
   }
 }
