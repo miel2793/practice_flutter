@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:practice_flutter/button.dart';
 import 'package:practice_flutter/home.dart';
 class Myapp extends StatelessWidget {
    Myapp({super.key});
@@ -9,7 +10,7 @@ class Myapp extends StatelessWidget {
       //theme:ThemeData(b),
       debugShowCheckedModeBanner: false,
       title:"Practice",
-      home:Home(),
+      home:Button(),
     );
   }
 }

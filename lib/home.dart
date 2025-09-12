@@ -12,7 +12,28 @@ class Home extends StatelessWidget {
         fontSize:25,color:Colors.black),)
       ),
 body:SingleChildScrollView(
-  child: Column(
+  child:SingleChildScrollView(
+    scrollDirection:Axis.horizontal,
+    child: Row(
+      mainAxisAlignment:MainAxisAlignment.spaceEvenly,
+     // crossAxisAlignment:CrossAxisAlignment.,
+      children: [
+        Text("  world",
+            style:TextStyle(color:Colors.deepOrange,
+                fontWeight: FontWeight.bold,
+                fontSize:22)),
+        Text(" Hello world is hello world  ",
+            style:TextStyle(color:Colors.deepOrange,
+                fontWeight: FontWeight.bold,
+                fontSize:22)),
+        Text("  world",
+            style:TextStyle(color:Colors.deepOrange,
+                fontWeight: FontWeight.bold,
+                fontSize:22)),
+      ],
+    ),
+  )
+  /*Column(
     children: [
       Text("Miel Mahmud Sifat\nID:20234103368\nIntke:52  ",
           style:TextStyle(color:Colors.deepOrange,
@@ -71,7 +92,7 @@ body:SingleChildScrollView(
               fontWeight: FontWeight.bold,
               fontSize:22)),
     ],
-  ),
+  ),*/
 )
 
 
