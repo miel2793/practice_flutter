@@ -1,3 +1,3 @@
 
  // tow type of wiget
- // 1 . stateful ,  2 stateless
+ // 1 . stateful = update hobe ,  2 stateless = update hobe na

@@ -1,24 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:practice_flutter/app.dart';
 
 main()
 {
-  runApp(myapp());
+  runApp(Myapp());
 }
-class myapp extends StatelessWidget {
-  const myapp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      //theme: ThemeData(t),
-      debugShowCheckedModeBanner: false,
-      home: AppBar(
-
-         backgroundColor:Colors.white ,
-        title: Text(" Home ",style: TextStyle(fontSize: 40,fontWeight: FontWeight.bold),),
-      ),
-
-    );
-  }
-}
-
