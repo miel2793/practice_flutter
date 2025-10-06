@@ -1,6 +1,6 @@
-import 'package:flutter/cupertino.dart';
-import'App.dart';
+import 'package:flutter/material.dart';
+import 'package:practice_flutter/myyapp.dart';
 main()
 {
-  runApp(App());
+  runApp(Myapp());
 }
