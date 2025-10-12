@@ -5,66 +5,34 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.green,
+      backgroundColor: Colors.white.withBlue(100),
       appBar:AppBar(
-        title: Text("Home"),
-        backgroundColor: Colors.grey,
+        title: Text(" Home ",style: TextStyle(
+            fontSize: 34,
+            fontWeight: FontWeight.bold,
+            color: Colors.red
+        ),),
+
+        backgroundColor: Colors.blue,
       ),
-      body:SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: SingleChildScrollView(
-          scrollDirection: Axis.horizontal,
-          child: Row(
+      body: Center(
+        child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text("Miel  ",style: TextStyle(
-                fontSize: 34,
-                fontWeight: FontWeight.bold,
-                color: Colors.purple
-              ),),
-          
-              Text("Mahmud ",style: TextStyle(
-                  fontSize: 34,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.purple
-              ),),
-              Text(" Sifat ",style: TextStyle(
-                  fontSize: 34,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.purple
-              ),),
-              Text("ok ",style: TextStyle(
-                  fontSize: 34,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.purple
-              ),),
-              Text("Miel  ",style: TextStyle(
-                  fontSize: 34,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.purple
-              ),),
-          
-              Text("Mahmud ",style: TextStyle(
-                  fontSize: 34,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.purple
-              ),),
-              Text(" Sifat ",style: TextStyle(
-                  fontSize: 34,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.purple
-              ),),
-              Text("ok ",style: TextStyle(
-                  fontSize: 34,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.purple
-              ),),
-          
-          
+              ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.purple,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10),
+
+                  )
+        ),
+            onPressed: (){}, child:Text("Submit") ),
             ],
           ),
-        ),
-      )
+      ),
+
     );
 
   }
