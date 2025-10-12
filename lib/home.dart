@@ -5,11 +5,68 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Home",style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold),),
-        backgroundColor: Colors.purple,
-        centerTitle: true,
+      backgroundColor: Colors.green,
+      appBar:AppBar(
+        title: Text("Home"),
+        backgroundColor: Colors.grey,
       ),
+      body:SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Text("Miel  ",style: TextStyle(
+                fontSize: 34,
+                fontWeight: FontWeight.bold,
+                color: Colors.purple
+              ),),
+          
+              Text("Mahmud ",style: TextStyle(
+                  fontSize: 34,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.purple
+              ),),
+              Text(" Sifat ",style: TextStyle(
+                  fontSize: 34,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.purple
+              ),),
+              Text("ok ",style: TextStyle(
+                  fontSize: 34,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.purple
+              ),),
+              Text("Miel  ",style: TextStyle(
+                  fontSize: 34,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.purple
+              ),),
+          
+              Text("Mahmud ",style: TextStyle(
+                  fontSize: 34,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.purple
+              ),),
+              Text(" Sifat ",style: TextStyle(
+                  fontSize: 34,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.purple
+              ),),
+              Text("ok ",style: TextStyle(
+                  fontSize: 34,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.purple
+              ),),
+          
+          
+            ],
+          ),
+        ),
+      )
     );
+
   }
+
 }

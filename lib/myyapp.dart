@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:practice_flutter/home.dart';
-class Myapp extends StatelessWidget {
-  const Myapp({super.key});
+//import 'CustomAppbar.dart';
+class myyapp extends StatelessWidget {
+  const myyapp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:Home(
-
-      ) ,
-
+      debugShowCheckedModeBanner: true,
+      home:Home(),
     );
   }
 }
