@@ -16,22 +16,56 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.blue,
       ),
       body: Center(
-        child: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              ElevatedButton(
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.purple,
-                  foregroundColor: Colors.white,
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(10),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          child: Column(
+           // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                SizedBox(
+                  height: 40,
+                ),
+                SizedBox(
+                  height:50,
+                  width: 500,
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.purple,
+                      foregroundColor: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(10),
 
-                  )
+                      )
+                          ),
+                              onPressed: (){}, child:Text("Submit") ),
+                ),
+                SizedBox(
+                  height: 40,
+                ),
+                SizedBox(
+                  height:50,
+                  width: 500,
+                  child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                          backgroundColor: Colors.purple,
+                          foregroundColor: Colors.white,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+
+                          )
+                      ),
+                      onPressed: (){}, child:Text("Submit") ),
+                ),
+                Icon(Icons.accessibility_new_rounded),
+                IconButton(onPressed: (){}, icon:Icon(Icons.adb_outlined,
+                  size: 40,
+                  color: Colors.black87,
+
+                  ))
+              ],
+            ),
         ),
-            onPressed: (){}, child:Text("Submit") ),
-            ],
-          ),
       ),
+      
 
     );
 
