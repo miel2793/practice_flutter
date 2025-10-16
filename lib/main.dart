@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 
-import 'myyapp.dart';
+import 'APP.dart';
+
 
 main()
 {
-  runApp(myyapp());
+  runApp(App());
 }
