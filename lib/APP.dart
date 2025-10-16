@@ -9,7 +9,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title:'practice',
-      home:Home(),
+      home:Input(),
 
     );
   }
