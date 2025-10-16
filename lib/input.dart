@@ -21,8 +21,18 @@ class Input extends StatelessWidget {
       ),
       body:Column(
         children: [
-          TextField(
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 50,vertical: 100),
+            child: TextField(
+            decoration:
+              InputDecoration(
+                hintText:'Enter Your Number',
+                     labelText:'Enter Your Name',
+                prefixIcon: Icon(Icons.phone)
 
+              )
+              ,
+            ),
           )
 
         ],
