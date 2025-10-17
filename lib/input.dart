@@ -16,30 +16,15 @@ class Input extends StatelessWidget {
       ),
       body: Column(
         children: [
+
+
+
+
+
+
+
           Padding(
-            padding: const EdgeInsets.only(top: 55,left: 8,right: 8),
-            child: TextField(
-             // maxLength: 11,
-            keyboardType:TextInputType.name ,
-             /// ty
-
-             decoration:
-              InputDecoration(
-                labelText:'Enter Your Name',
-                prefixIcon: Icon(Icons.drive_file_rename_outline),
-
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(10)
-                )
-              ),
-
-
-
-            ),
-
-          ),
-          Padding(
-            padding: const EdgeInsets.only(top:2,left: 8,right: 8),
+            padding: const EdgeInsets.only(top:55,left: 8,right: 8),
             child: TextField(
               maxLength: 11,
               keyboardType:TextInputType.name ,
@@ -48,12 +33,25 @@ class Input extends StatelessWidget {
               decoration:
               InputDecoration(
                   labelText:'Enter Your Number',
+                  labelStyle: TextStyle(
+                    color: Colors.red
+                  ),
                   prefixIcon: Icon(Icons.phone),
+                  suffixIcon: Icon(Icons.check),
 
 
                   border: OutlineInputBorder(
-                      borderRadius: BorderRadius.circular(10)
+                      borderRadius: BorderRadius.circular(30),
+
+
+                  ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(20),
+                  borderSide:BorderSide(
+                    color: Colors.purple,width: 2,
                   )
+                )
+
               ),
 
 
@@ -61,6 +59,11 @@ class Input extends StatelessWidget {
             ),
 
           ),
+
+
+
+
+
 
           GestureDetector(
             onTap: () {
