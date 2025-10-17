@@ -38,6 +38,30 @@ class Input extends StatelessWidget {
             ),
 
           ),
+          Padding(
+            padding: const EdgeInsets.only(top:2,left: 8,right: 8),
+            child: TextField(
+              maxLength: 11,
+              keyboardType:TextInputType.name ,
+              /// ty
+
+              decoration:
+              InputDecoration(
+                  labelText:'Enter Your Number',
+                  prefixIcon: Icon(Icons.phone),
+
+
+                  border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10)
+                  )
+              ),
+
+
+
+            ),
+
+          ),
+
           GestureDetector(
             onTap: () {
               print("দয়া করে  আমাদের ওয়েবসাইটে যোগাযোগ করুন ধন্যবাদ!!");
