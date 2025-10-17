@@ -19,8 +19,9 @@ class Input extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(top: 55,left: 8,right: 8),
             child: TextField(
-              maxLength: 11,
-           //  keyboardType: ,
+             // maxLength: 11,
+            keyboardType:TextInputType.name ,
+             /// ty
 
              decoration:
               InputDecoration(
@@ -33,7 +34,15 @@ class Input extends StatelessWidget {
               ),
 
 
+
             ),
+
+          ),
+          GestureDetector(
+            onTap: () {
+              print("দয়া করে  আমাদের ওয়েবসাইটে যোগাযোগ করুন ধন্যবাদ!!");
+            },
+              child: Text("Read More....")
           )
         ],
       ),
