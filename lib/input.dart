@@ -6,6 +6,46 @@ class Input extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.amber.withBlue(4),
+        title: Text('Flutter Input',style: TextStyle(
+          fontWeight: FontWeight.bold,
+          fontSize: 30,
+
+        ),),
+        centerTitle: true,
+      ),
+      body: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 55,left: 8,right: 8),
+            child: TextField(
+              maxLength: 11,
+           //  keyboardType: ,
+
+             decoration:
+              InputDecoration(
+                labelText:'Enter Your Name',
+                prefixIcon: Icon(Icons.drive_file_rename_outline),
+
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(10)
+                )
+              ),
+
+
+            ),
+          )
+        ],
+      ),
+
+
+    );
+  }
+}
+
+/*
+ Scaffold(
+      appBar: AppBar(
         centerTitle:true,
         backgroundColor: Colors.red,
         title: Text(
@@ -22,21 +62,29 @@ class Input extends StatelessWidget {
       body:Column(
         children: [
           Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 50,vertical: 100),
+            padding: const EdgeInsets.only(left: 30,right: 30,top: 20),
             child: TextField(
+
+              cursorColor: Colors.red,
+            keyboardType: TextInputType.phone,
+            maxLength: 11,
             decoration:
               InputDecoration(
                 hintText:'Enter Your Number',
-                     labelText:'Enter Your Name',
+                    // labelText:'Enter Your Name',
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30)
+
+                ),
                 prefixIcon: Icon(Icons.phone)
 
-              )
-              ,
+
+              ),
+
             ),
+
           )
 
         ],
       ),
-    );
-  }
-}
+ */
