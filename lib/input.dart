@@ -113,6 +113,19 @@ class Input extends StatelessWidget {
             ),
           ),
 
+          SizedBox(
+            height: 50,
+            width: 200,
+            child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  foregroundColor: Colors.black87,
+                  backgroundColor: Colors.amber.withBlue(4),
+                ),
+                onPressed: (){
+                  print('Submitted Successful');
+                }, child: Text("Submit")),
+          ),
+
 
 
 
