@@ -30,7 +30,7 @@ class Input extends StatelessWidget {
             child: TextField(
               controller: number,
               maxLength: 11,
-              keyboardType:TextInputType.name ,
+              keyboardType:TextInputType.phone ,
               /// ty
 
               decoration:
@@ -140,7 +140,7 @@ class Input extends StatelessWidget {
 
           GestureDetector(
             onTap: () {
-              print("দয়া করে  আমাদের ওয়েবসাইটে যোগাযোগ করুন ধন্যবাদ!!");
+              print("আমি বলছি আমি জানি না ,\nদয়া করে  আমাদের ওয়েবসাইটে যোগাযোগ করুন ধন্যবাদ!!");
             },
               child: Text("Read More....")
           )
