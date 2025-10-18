@@ -46,11 +46,19 @@ class Input extends StatelessWidget {
 
                   ),
                 enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(20),
+                  borderRadius: BorderRadius.circular(30),
                   borderSide:BorderSide(
                     color: Colors.purple,width: 2,
                   )
+                ),
+
+
+                  focusedBorder: OutlineInputBorder(
+              borderRadius: BorderRadius.circular(30),
+                borderSide:BorderSide(
+                  color: Colors.green,width: 2,
                 )
+            )
 
               ),
 
@@ -59,6 +67,53 @@ class Input extends StatelessWidget {
             ),
 
           ),
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: TextField(
+              obscureText: true,
+
+             // minLines: 1,
+              decoration: InputDecoration(
+               /* filled: true,
+                fillColor: Colors.pink,*/
+
+                prefixIcon: Icon(Icons.lock),
+                suffixIcon: Icon(Icons.remove_red_eye),
+                hintText: "Enter a Password",
+                hintStyle: TextStyle(
+                  color: Colors.red
+                ),
+                helperText: "Enter Here",
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30),
+
+
+
+
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(30),
+                  borderSide:BorderSide(
+                    color: Colors.purple,
+                    width: 2,
+                  )
+                ),
+                focusedBorder: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+                    borderSide:BorderSide(
+                      color: Colors.green,
+                      width: 2,
+                    )
+                ),
+
+                  
+              ),
+              
+
+            ),
+          ),
+
+
 
 
 
