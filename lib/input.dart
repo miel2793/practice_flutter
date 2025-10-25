@@ -18,21 +18,26 @@ class Input extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            TextField(
-        
-            ),
-            InkWell(
-              onTap: () {
-                print("Miel Mahmud Sifat");
-              },
-        
-            ),
-           
-            GestureDetector(
-              onLongPress: () {
-                print(" hello world ");
-              },
-            )
+
+            Padding(
+              padding: const EdgeInsets.all(10.0),
+              child: TextField(
+                decoration: InputDecoration(
+                prefixIcon: Icon(Icons.person),
+                  labelText: 'Enter Your Name',
+                  helperText: 'Enter here',
+                  helperStyle: TextStyle(fontWeight: FontWeight.bold),
+                 suffixIcon: Icon(Icons.check),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(30),
+
+                    )
+                  )
+
+                ),
+
+              ),
+
         
           ],
         ),

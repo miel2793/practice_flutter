@@ -10,7 +10,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title:'practice',
-      home:Button(),
+      home:Input(),
 
     );
   }
