@@ -18,6 +18,29 @@ class Button extends StatelessWidget {
         ),
         ),
       ),
+      body: SingleChildScrollView(
+        
+        child: Column(
+          children: [
+            Center(
+              child: SizedBox(
+                child: Padding(
+
+                  padding: const EdgeInsets.all(8.0),
+                  child: ElevatedButton(
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Colors.lightGreen,
+                      foregroundColor: Colors.black,
+
+
+                    ),
+                      onPressed: (){}, child:Text("Click Here")),
+                ),
+              ),
+            )
+          ],
+        ),
+      ),
 
 
     );
