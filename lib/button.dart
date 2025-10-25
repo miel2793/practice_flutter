@@ -37,10 +37,32 @@ class Button extends StatelessWidget {
                       onPressed: (){}, child:Text("Click Here")),
                 ),
               ),
-            )
+              
+            ),
+            SizedBox(
+              height: 30,
+            ),
+           IconButton(onPressed: (){}, icon:Icon(Icons.adb)),
+            TextButton(onPressed: (){print('kire');}, child: Text("HI")),
+
+
+
+            //for clickable  a text,icon, etc use gustraditector,|| inkwell
+
+
+           
           ],
+
+
         ),
+
       ),
+
+       floatingActionButton:   FloatingActionButton(onPressed: () {
+         print("object");
+
+       },
+       child: Icon(Icons.access_alarm_rounded),),
 
 
     );
