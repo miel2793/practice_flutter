@@ -4,9 +4,21 @@ class Button extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const
-    Scaffold(
-      appBar: ,
+    return Scaffold(
+      appBar: AppBar(
+        centerTitle:true,
+        backgroundColor: Colors.amber,
+        title: const Text(
+          'Button Group',style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold
+
+
+
+        ),
+        ),
+      ),
+
 
     );
   }
