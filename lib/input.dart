@@ -1,4 +1,14 @@
 import 'package:flutter/material.dart';
+
+/* this contains
+* Textfild
+*  textfield
+*  controller
+*  sumit and store
+*  all user input  */
+
+
+
 class Input extends StatelessWidget {
   const Input({super.key});
 
