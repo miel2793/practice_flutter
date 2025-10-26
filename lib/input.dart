@@ -140,6 +140,9 @@ class Input extends StatelessWidget {
             print(name.text);
             print(phone.text);
             print(pass.text);
+            name.clear();
+            phone.clear();
+            pass.clear();
             }, child: Text("Submit"))
 
 
