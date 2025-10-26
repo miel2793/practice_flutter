@@ -134,8 +134,12 @@ class Registration_form extends StatelessWidget {
                             foregroundColor: Colors.black
                           ),
                             onPressed: (){
-print(number.text);
-print(pass.text);
+                            if(form_key.currentState !.validate())
+                              {
+                                print(number.text);
+                                print(pass.text);
+                              }
+
 number.clear();
 pass.clear();
 
