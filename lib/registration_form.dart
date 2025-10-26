@@ -33,10 +33,7 @@ class Registration_form extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
-            SizedBox(
-                width: 200,
 
-                child: Image.asset('asset/js.jpg'))
           ],
         ),
       ),
