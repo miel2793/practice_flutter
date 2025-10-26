@@ -13,30 +13,32 @@ class Registration_form extends StatelessWidget {
         centerTitle:true,
         backgroundColor: Colors.blue,
         title: Text(
-          'Button Group',style: TextStyle(
+          'Image ',style: TextStyle(
             fontSize: 20,
             fontWeight: FontWeight.bold
         ),
         ),
       ),
-      body:Column(
-        children: [
-          SizedBox(
-              width: 200,
-              child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwn_yaeUUWyGw6jv8s1YwbN8cwkWyDQwDQaw&s')),
+      body:Center(
+        child: Column(
+          children: [
+            SizedBox(
+                width: 200,
+                child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwn_yaeUUWyGw6jv8s1YwbN8cwkWyDQwDQaw&s')),
 
-          SizedBox(
-              width: 200,
+            SizedBox(
+                width: 200,
 
-              child: Image.asset('asset/asp.jpg')),
-          SizedBox(
-            height: 20,
-          ),
-          SizedBox(
-              width: 200,
+                child: Image.asset('asset/asp.jpg')),
+            SizedBox(
+              height: 20,
+            ),
+            SizedBox(
+                width: 200,
 
-              child: Image.asset('asset/js.jpg'))
-        ],
+                child: Image.asset('asset/js.jpg'))
+          ],
+        ),
       ),
 
     );
