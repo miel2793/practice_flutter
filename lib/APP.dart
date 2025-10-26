@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:practice_flutter/Home.dart';
 import 'package:practice_flutter/input.dart';
 import 'package:practice_flutter/button.dart';
+import 'package:practice_flutter/registration_form.dart';
+
 class App extends StatelessWidget {
   const App({super.key});
 
@@ -10,7 +12,7 @@ class App extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title:'practice',
-      home:Input(),
+      home:Registration_form(),
 
     );
   }
