@@ -33,12 +33,25 @@ class Input extends StatelessWidget {
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(30),
 
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+                      borderSide: BorderSide(
+                        color:Colors.lightBlueAccent,
+                        width: 1,
+
+
+                      )
+
+                    ),
+
+
                     )
                   )
 
                 ),
 
-              ),
+
 
         //
           ],
