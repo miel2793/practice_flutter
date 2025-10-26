@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 /*
 * image use
 * log in form and Text form field
+* defult validation
 * */
 
 class Registration_form extends StatelessWidget {
@@ -58,6 +59,8 @@ class Registration_form extends StatelessWidget {
                   children: [
                     TextFormField(
                       controller: number,
+                      keyboardType: TextInputType.phone,
+                      maxLength: 11,
                       decoration: InputDecoration(
                         hintText: 'Enter Your Phone Number',
                         border: OutlineInputBorder(
@@ -65,6 +68,26 @@ class Registration_form extends StatelessWidget {
         
                         )
                       ),
+
+                      ////validation check
+                      validator: (value) {
+                        if(value==null || value.isEmpty)
+                          {
+                            return 'Enter your Phone Number  ';
+                          }
+                        else if (value.length!=11)
+                          {
+                            return 'Enter your Correct Phone Number  ';
+                          }
+                        else if(value.runtimeType!=int )
+                          {
+                            return 'Enter your Correct Phone Number  ';
+                          }
+                        else
+                          {
+                            return null;
+                          }
+                      },
                     ),
                     SizedBox(
                       height: 20,
