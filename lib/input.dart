@@ -41,15 +41,96 @@ class Input extends StatelessWidget {
                         width: 1,
 
 
+
                       )
 
                     ),
 
 
-                    )
+                    ),
+
+
                   )
 
                 ),
+            Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: TextField(
+                keyboardType: TextInputType.number,
+                  maxLength: 11,
+                  decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.phone),
+                    labelText: 'Enter Your Number',
+                    labelStyle: TextStyle(color: Colors.red),
+                    helperText: 'Enter here',
+                    helperStyle: TextStyle(fontWeight: FontWeight.bold),
+                    suffixIcon: Icon(Icons.check),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30),
+                        borderSide: BorderSide(
+                          color:Colors.lightBlueAccent,
+                          width: 1,
+
+
+
+                        )
+
+                    ),
+
+
+                  ),
+
+
+                )
+
+            ),
+            Padding(
+                padding: const EdgeInsets.all(10.0),
+                child: TextField(
+                  obscureText: true,
+
+                  decoration: InputDecoration(
+                    prefixIcon: Icon(Icons.lock),
+                    labelText: 'Enter Your Password',
+                    labelStyle: TextStyle(color: Colors.red),
+                    helperText: 'Enter here',
+                    helperStyle: TextStyle(fontWeight: FontWeight.bold),
+                    suffixIcon: Icon(Icons.check),
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(30),
+
+                    ),
+                    focusedBorder: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(30),
+                        borderSide: BorderSide(
+                          color:Colors.lightBlueAccent,
+                          width: 1,
+
+
+
+                        )
+
+                    ),
+
+
+                  ),
+
+
+                )
+
+            ),
+
+        ElevatedButton(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.amber,
+            foregroundColor: Colors.black
+
+          ),
+            onPressed: (){}, child: Text("Submit"))
 
 
 
