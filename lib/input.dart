@@ -4,7 +4,7 @@ class Input extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    TextEditingController name = TextEditingController();
+    TextEditingController name = TextEditingController(); // use for store   details  for submit
     TextEditingController phone = TextEditingController();
     TextEditingController pass = TextEditingController();
     return Scaffold(
@@ -140,7 +140,7 @@ class Input extends StatelessWidget {
             print(name.text);
             print(phone.text);
             print(pass.text);
-            name.clear();
+            name.clear(); // use for  clear  after submit ..
             phone.clear();
             pass.clear();
             }, child: Text("Submit"))
