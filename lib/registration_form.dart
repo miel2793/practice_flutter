@@ -56,8 +56,9 @@ class Registration_form extends StatelessWidget {
                   ),
                 ),
                 TextFormField(
+                  obscureText: true,
                   decoration: InputDecoration(
-                      hintText: 'Enter Your Phone Number',
+                      hintText: 'Enter your Password',
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
 
