@@ -37,6 +37,36 @@ class Registration_form extends StatelessWidget {
 
             /////Log in form
 
+            Text( "Log In with Phone Number ",
+              style:TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            //Text Form Field
+            Form(child: Column(
+              children: [
+                TextFormField(
+                  decoration: InputDecoration(
+                    hintText: 'Enter Your Phone Number',
+                    border: OutlineInputBorder(
+                      borderRadius: BorderRadius.circular(10),
+
+                    )
+                  ),
+                ),
+                TextFormField(
+                  decoration: InputDecoration(
+                      hintText: 'Enter Your Phone Number',
+                      border: OutlineInputBorder(
+                        borderRadius: BorderRadius.circular(10),
+
+                      )
+                  ),
+                )
+              ],
+            ))
+
 
           ],
         ),
