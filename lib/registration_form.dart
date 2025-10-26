@@ -23,78 +23,81 @@ class Registration_form extends StatelessWidget {
         ),
         ),
       ),
-      body:Center(
-        child: Column(
+      body:
+      SingleChildScrollView(
+        child: Center(
+          child: Column(
+        
+            children: [
+              SizedBox(
 
-          children: [
-            SizedBox(
-              height: 50,
-                width: 200,
-                child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwn_yaeUUWyGw6jv8s1YwbN8cwkWyDQwDQaw&s')),
-
-            SizedBox(
-              height: 50,
-                width: 200,
-
-                child: Image.asset('asset/asp.jpg')),
-            SizedBox(
-              height: 20,
-            ),
-
-            /////Log in form
-
-            Text( "Log In with Phone Number ",
-              style:TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
-            ),
-            SizedBox(
-              height: 10,
-            ),
-            //Text Form Field
-            Padding(
-              padding: const EdgeInsets.all(10),
-              child: Form(child: Column(
-                children: [
-                  TextFormField(
-                    controller: number,
-                    decoration: InputDecoration(
-                      hintText: 'Enter Your Phone Number',
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(10),
-
-                      )
-                    ),
-                  ),
-                  SizedBox(
-                    height: 20,
-                  ),
-                  TextFormField(
-                    controller: pass,
-                    obscureText: true,
-                    decoration: InputDecoration(
-                        hintText: 'Enter your Password',
+                  width: 200,
+                  child: Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwn_yaeUUWyGw6jv8s1YwbN8cwkWyDQwDQaw&s')),
+        
+              SizedBox(
+               height: 100,
+                  width: 200,
+        
+                  child: Image.asset('asset/asp.jpg')),
+              SizedBox(
+                height: 20,
+              ),
+        
+              /////Log in form
+        
+              Text( "Log In with Phone Number ",
+                style:TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              //Text Form Field
+              Padding(
+                padding: const EdgeInsets.all(10),
+                child: Form(child: Column(
+                  children: [
+                    TextFormField(
+                      controller: number,
+                      decoration: InputDecoration(
+                        hintText: 'Enter Your Phone Number',
                         border: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
-
+        
                         )
+                      ),
                     ),
-                  ),
-                  SizedBox(
-                    height: 10,
-                  ),
-                  SizedBox(
-                    width: 100,
-                      child: ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: Colors.lightBlueAccent,
-                          foregroundColor: Colors.black
-                        ),
-                          onPressed: (){}, child: Text('Login',style: TextStyle(fontWeight: FontWeight.bold),)))
-                ],
-              )),
-            )
-
-
-          ],
+                    SizedBox(
+                      height: 20,
+                    ),
+                    TextFormField(
+                      controller: pass,
+                      obscureText: true,
+                      decoration: InputDecoration(
+                          hintText: 'Enter your Password',
+                          border: OutlineInputBorder(
+                            borderRadius: BorderRadius.circular(10),
+        
+                          )
+                      ),
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    SizedBox(
+                      width: 100,
+                        child: ElevatedButton(
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.lightBlueAccent,
+                            foregroundColor: Colors.black
+                          ),
+                            onPressed: (){}, child: Text('Login',style: TextStyle(fontWeight: FontWeight.bold),)))
+                  ],
+                )),
+              )
+        
+        
+            ],
+          ),
         ),
       ),
 
