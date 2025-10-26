@@ -9,6 +9,9 @@ class Registration_form extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController number = TextEditingController();
+    TextEditingController pass = TextEditingController();
+
     return Scaffold(
       appBar: AppBar(
         centerTitle:true,
@@ -47,6 +50,7 @@ class Registration_form extends StatelessWidget {
             Form(child: Column(
               children: [
                 TextFormField(
+                  controller: number,
                   decoration: InputDecoration(
                     hintText: 'Enter Your Phone Number',
                     border: OutlineInputBorder(
@@ -55,7 +59,11 @@ class Registration_form extends StatelessWidget {
                     )
                   ),
                 ),
+                SizedBox(
+                  height: 20,
+                ),
                 TextFormField(
+                  controller: pass,
                   obscureText: true,
                   decoration: InputDecoration(
                       hintText: 'Enter your Password',
