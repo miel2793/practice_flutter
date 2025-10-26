@@ -84,10 +84,7 @@ class Registration_form extends StatelessWidget {
                           {
                             return 'Enter your Correct Phone Number  ';
                           }
-                        else if(value.runtimeType!=int )
-                          {
-                            return 'Enter your Correct Phone Number  ';
-                          }
+
                         else
                           {
                             return null;
