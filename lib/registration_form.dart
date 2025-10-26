@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 /*
 * image use
+* log in form and Text form field
 * */
 
 class Registration_form extends StatelessWidget {
@@ -33,6 +34,9 @@ class Registration_form extends StatelessWidget {
             SizedBox(
               height: 20,
             ),
+
+            /////Log in form
+
 
           ],
         ),
