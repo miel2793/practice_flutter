@@ -72,7 +72,18 @@ class Registration_form extends StatelessWidget {
 
                       )
                   ),
-                )
+                ),
+                SizedBox(
+                  height: 10,
+                ),
+                SizedBox(
+                  width: 100,
+                    child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.lightBlueAccent,
+                        foregroundColor: Colors.black
+                      ),
+                        onPressed: (){}, child: Text('Login',style: TextStyle(fontWeight: FontWeight.bold),)))
               ],
             ))
 
