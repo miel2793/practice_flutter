@@ -22,9 +22,11 @@ class Input extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: TextField(
-                decoration: InputDecoration(
+
+                  decoration: InputDecoration(
                 prefixIcon: Icon(Icons.person),
                   labelText: 'Enter Your Name',
+                  labelStyle: TextStyle(color: Colors.red),
                   helperText: 'Enter here',
                   helperStyle: TextStyle(fontWeight: FontWeight.bold),
                  suffixIcon: Icon(Icons.check),
