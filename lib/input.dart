@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 /* this contains
-* Textfild
-*  textfield
+* Text field
+*  text field
 *  controller
-*  sumit and store
+*  submit and store
 *  all user input  */
 
 
