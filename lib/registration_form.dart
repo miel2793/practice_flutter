@@ -12,6 +12,8 @@ class Registration_form extends StatelessWidget {
   Widget build(BuildContext context) {
     TextEditingController number = TextEditingController();
     TextEditingController pass = TextEditingController();
+    /// create and assigned   validation for form ,
+    final form_key = GlobalKey<FormState>();
 
     return Scaffold(
       appBar: AppBar(
@@ -55,7 +57,10 @@ class Registration_form extends StatelessWidget {
               //Text Form Field
               Padding(
                 padding: const EdgeInsets.all(10),
-                child: Form(child: Column(
+                child: Form(
+                    key: form_key,
+                    child: Column(
+
                   children: [
                     TextFormField(
                       controller: number,
@@ -102,6 +107,21 @@ class Registration_form extends StatelessWidget {
         
                           )
                       ),
+                      validator: (value) {
+                        if(value==null|| value.isEmpty)
+                          {
+                            return 'Please Enter Password ';
+                          }
+                        else if(value.length<4)
+                          {
+                            return 'Password Must Be 4 Characters ';
+
+                          }
+                        else
+                          {
+                            return null;
+                          }
+                      },
                     ),
                     SizedBox(
                       height: 10,
@@ -113,7 +133,13 @@ class Registration_form extends StatelessWidget {
                             backgroundColor: Colors.lightBlueAccent,
                             foregroundColor: Colors.black
                           ),
-                            onPressed: (){}, child: Text('Login',style: TextStyle(fontWeight: FontWeight.bold),)))
+                            onPressed: (){
+print(number.text);
+print(pass.text);
+number.clear();
+pass.clear();
+
+                            }, child: Text('Login',style: TextStyle(fontWeight: FontWeight.bold),)))
                   ],
                 )),
               )
