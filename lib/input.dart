@@ -4,6 +4,9 @@ class Input extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController name = TextEditingController();
+    TextEditingController phone = TextEditingController();
+    TextEditingController pass = TextEditingController();
     return Scaffold(
       appBar: AppBar(
         title: Text('Input',style: TextStyle(
@@ -22,6 +25,7 @@ class Input extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(10.0),
               child: TextField(
+                controller: name,
 
                   decoration: InputDecoration(
                 prefixIcon: Icon(Icons.person),
@@ -56,6 +60,7 @@ class Input extends StatelessWidget {
             Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: TextField(
+                  controller: phone,
                 keyboardType: TextInputType.number,
                   maxLength: 11,
                   decoration: InputDecoration(
@@ -91,6 +96,7 @@ class Input extends StatelessWidget {
             Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: TextField(
+                  controller: pass,
                   obscureText: true,
 
                   decoration: InputDecoration(
@@ -130,7 +136,11 @@ class Input extends StatelessWidget {
             foregroundColor: Colors.black
 
           ),
-            onPressed: (){}, child: Text("Submit"))
+            onPressed: (){
+            print(name.text);
+            print(phone.text);
+            print(pass.text);
+            }, child: Text("Submit"))
 
 
 
