@@ -80,6 +80,10 @@ class Registration_form extends StatelessWidget {
                           {
                             return 'Enter your Phone Number  ';
                           }
+                        else if(!value.startsWith('01'))
+                          {
+                            return 'Enter Correct Number ';
+                          }
                         else if (value.length!=11)
                           {
                             return 'Enter your Correct Phone Number  ';
