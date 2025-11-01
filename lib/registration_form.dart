@@ -93,7 +93,7 @@ class Registration_form extends StatelessWidget {
                           {
                             return null;
                           }
-                        //
+
                       },
                     ),
                     SizedBox(
