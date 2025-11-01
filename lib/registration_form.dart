@@ -16,6 +16,7 @@ class Registration_form extends StatelessWidget {
     final form_key = GlobalKey<FormState>();
 
     return Scaffold(
+
       appBar: AppBar(
         centerTitle:true,
         backgroundColor: Colors.blue,
